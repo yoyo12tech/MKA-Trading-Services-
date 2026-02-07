@@ -509,6 +509,10 @@ h1 {
   padding: 24px;
 }
 
+.contact-details {
+  align-items: center;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
