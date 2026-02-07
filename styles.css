@@ -93,8 +93,9 @@ img {
 }
 
 .header-contact .theme-toggle {
-  justify-self: end;
-  margin-bottom: 6px;
+  margin-left: auto;
+  margin-bottom: 0;
+  align-self: center;
 }
 
 .brand {
@@ -137,11 +138,19 @@ img {
 }
 
 .header-contact {
-  text-align: right;
+  text-align: left;
   font-size: 14px;
-  display: grid;
-  gap: 6px;
-  justify-items: end;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.header-meta {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
 .header-label {
@@ -149,10 +158,19 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-subtle);
+  display: block;
 }
 
 .header-value {
   font-weight: 600;
+  display: block;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: max-content;
 }
 
 .hero {
@@ -552,7 +570,20 @@ h1 {
 @media (max-width: 720px) {
   .header-contact {
     text-align: left;
-    justify-items: start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 8px;
+    position: relative;
+    padding-right: 48px;
+  }
+
+  .header-contact .theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+    align-self: auto;
   }
 }
 
