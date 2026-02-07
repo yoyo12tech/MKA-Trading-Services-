@@ -327,6 +327,19 @@
         localStorage.setItem("mka-theme", next);
         setTheme(next);
       });
+
+      const header = document.querySelector(".site-header");
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        const currentY = window.scrollY;
+        if (currentY > lastScrollY && currentY > 80) {
+          header?.classList.add("header-hidden");
+        } else {
+          header?.classList.remove("header-hidden");
+        }
+        lastScrollY = currentY;
+      });
     </script>
   </body>
 </html>

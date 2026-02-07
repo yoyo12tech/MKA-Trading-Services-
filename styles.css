@@ -19,6 +19,7 @@
   --hover-border: rgba(15, 124, 162, 0.35);
   --hover-shadow: 0 8px 18px rgba(15, 36, 60, 0.08);
   --hover-shadow-strong: 0 18px 36px rgba(15, 36, 60, 0.12);
+  --header-height: 92px;
 }
 
 [data-theme="dark"] {
@@ -54,6 +55,7 @@ body {
   color: var(--text);
   background: var(--surface);
   line-height: 1.6;
+  padding-top: var(--header-height);
 }
 
 img {
@@ -70,9 +72,16 @@ img {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   padding: 20px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.site-header.header-hidden {
+  transform: translateY(-110%);
 }
 
 .header-content {
