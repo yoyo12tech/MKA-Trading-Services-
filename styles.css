@@ -359,6 +359,15 @@ h1 {
   .values {
     grid-template-columns: 1fr;
   }
+
+  body {
+    padding-top: 0;
+  }
+
+  .site-header {
+    position: static;
+    transform: none !important;
+  }
 }
 
 .value-card {
@@ -613,13 +622,21 @@ h1 {
 }
 
 .theme-icon {
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.theme-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 [data-theme="dark"] .theme-toggle .sun {
-  display: inline;
+  display: inline-flex;
   color: #ffffff;
 }
 
@@ -634,6 +651,6 @@ h1 {
 
 [data-theme="light"] .theme-toggle .moon,
 :root:not([data-theme="dark"]) .theme-toggle .moon {
-  display: inline;
+  display: inline-flex;
   color: #000000;
 }
