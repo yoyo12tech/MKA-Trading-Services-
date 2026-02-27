@@ -446,10 +446,16 @@
       let lastScrollY = window.scrollY;
 
       window.addEventListener("scroll", () => {
+        const isMobile = window.innerWidth <= 1024;
         const currentY = window.scrollY;
+        
         if (currentY > lastScrollY && currentY > 80) {
           header?.classList.add("header-hidden");
-        } else {
+        } else if (isMobile && currentY <= 10) {
+          // On mobile, only show header when scrolled to top
+          header?.classList.remove("header-hidden");
+        } else if (!isMobile) {
+          // On desktop, show header when scrolling up
           header?.classList.remove("header-hidden");
         }
         lastScrollY = currentY;

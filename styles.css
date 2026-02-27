@@ -843,6 +843,7 @@ h1 {
 @media (max-width: 1024px) {
   .burger-toggle {
     display: flex;
+    margin-right: auto;
   }
   
   .mobile-menu {
