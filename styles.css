@@ -844,6 +844,32 @@ h1 {
   }
 }
 
+/* Large Screen - Show header-meta when burger button is not present */
+@media (min-width: 1025px) {
+  .header-meta {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+
+  /* Increase label/value sizes for better desktop visibility */
+  .header-meta .header-label {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--text-subtle);
+  }
+
+  .header-meta .header-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .burger-toggle {
+    display: none !important;
+  }
+}
+
 @media (max-width: 520px) {
   .brand-name {
     display: none;
