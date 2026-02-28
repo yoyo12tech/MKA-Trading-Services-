@@ -850,4 +850,12 @@ h1 {
   .brand-tagline {
     display: none;
   }
+  
+  .header-value {
+    font-size: 12px;
+  }
+  
+  .header-label {
+    font-size: 10px;
+  }
 }
