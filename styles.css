@@ -852,12 +852,14 @@ h1 {
   .brand-tagline {
     display: none;
   }
-  
-  .header-value {
-    font-size: 12px;
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .mobile-menu-label {
+    font-size: 10px;
   }
   
-  .header-label {
-    font-size: 10px;
+  .mobile-menu-value {
+    font-size: 11px;
   }
 }
