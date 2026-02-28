@@ -800,7 +800,7 @@ h1 {
 }
 
 .mobile-menu-label {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -809,7 +809,7 @@ h1 {
 }
 
 .mobile-menu-value {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--primary);
   text-decoration: none;
