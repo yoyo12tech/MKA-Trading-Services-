@@ -10,7 +10,7 @@
   --border: #e2e7f0;
   --surface: #ffffff;
   --surface-alt: #ffffff;
-  --hero-bg: linear-gradient(120deg, rgba(11, 79, 108, 0.12), rgba(244, 162, 89, 0.1));
+  --hero-bg: linear-gradient(120deg, rgba(11, 79, 108, 0.15), rgba(244, 162, 89, 0.15));
   --footer-bg: #0d1f2d;
   --footer-text: #ffffff;
   --shadow: rgba(15, 36, 60, 0.08);
@@ -78,6 +78,7 @@ img {
   right: 0;
   z-index: 10;
   transition: transform 220ms ease, box-shadow 220ms ease;
+  box-shadow: 0px -8px 21px var(--primary);
 }
 
 .site-header.header-hidden {
@@ -653,26 +654,6 @@ h1 {
   font-weight: 600;
 }
 
-@media (max-width: 720px) {
-  .header-contact {
-    text-align: left;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    row-gap: 8px;
-    position: relative;
-    padding-right: 48px;
-  }
-
-  .header-contact .theme-toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-left: 0;
-    align-self: auto;
-  }
-}
-
 .theme-toggle {
   border: 1px solid var(--border);
   background: var(--surface-alt);
@@ -858,5 +839,15 @@ h1 {
     display: flex;
     gap: 12px;
     align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand-name {
+    display: none;
+  }
+  
+  .brand-tagline {
+    display: none;
   }
 }
