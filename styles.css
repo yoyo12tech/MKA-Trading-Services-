@@ -840,6 +840,14 @@ h1 {
     gap: 12px;
     align-items: center;
   }
+  
+  .mobile-menu-label {
+    font-size: 10px;
+  }
+  
+  .mobile-menu-value {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 520px) {
