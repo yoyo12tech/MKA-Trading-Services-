@@ -156,7 +156,7 @@ img {
 }
 
 .header-label {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-subtle);
@@ -166,6 +166,8 @@ img {
 .header-value {
   font-weight: 600;
   display: block;
+  font-size: 14px;
+  color: var(--primary);
 }
 
 .contact-item {
@@ -839,24 +841,6 @@ h1 {
     display: flex;
     gap: 12px;
     align-items: center;
-  }
-  
-  .mobile-menu-label {
-    font-size: 10px;
-  }
-  
-  .mobile-menu-value {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 1024px) and (orientation: landscape) {
-  .mobile-menu-label {
-    font-size: 9px;
-  }
-  
-  .mobile-menu-value {
-    font-size: 11px;
   }
 }
 
